@@ -5,7 +5,7 @@ document.getElementById("tableId").style.display = "none";
 function tablecreate() {
     $("#details tr").detach();
     $.ajax({
-        url: 'https://jsonplaceholder.typicode.com/posts',
+        url: 'https://jsonplaceholder.typicode.com/postsa',
         method: 'get',
         dataType: 'json',
         success: function (data) {
@@ -36,6 +36,9 @@ function tablecreate() {
 
             $('#details').append(openTr);
 
+        },
+        error: function error(){
+            document.getElementById("error-part").innerHTML = "Some error happened"
         }
     })
 }
@@ -44,3 +47,4 @@ function clearData() {
     document.getElementById("tableId").style.display = "none";
 
 }
+

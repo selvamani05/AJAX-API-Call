@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <form id="my-form">
+
+        <button id="btn" onclick="tablecreate()" type="button">Submit</button>
+        <button type="button" onclick="clearData()"> clear </button>
+    </form>
+
+    <div id="error-part" style=" font-size: 25px;padding: 50px;color: rebeccapurple;"></div>
+
+    <table id="tableId">
+        <thead>
+            <tr>
+                <th>userId</th>
+                <th>id</th>
+                <th>title</th>
+                <th>body</th>
+
+            </tr>
+        </thead>
+        <tbody id="details">
+
+        </tbody>
+
+
+    </table>
+    <script src="./index.js"></script>
+
+
+
+
+</body>
+
+</html>
