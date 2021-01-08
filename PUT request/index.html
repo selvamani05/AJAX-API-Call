@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <form id="my-form">
+
+        <input type="text" placeholder="firstname" id="firstname">
+        <input type="text" placeholder="lastname" id="lastname">
+
+        <br />
+        <br />
+        <br />
+
+        <button id="btn" onclick="tablecreate()" type="button">Submit</button>
+
+    </form>
+
+    <table id="tableId">
+        <thead>
+            <tr>
+                <th>userId</th>
+                <th>id</th>
+                <th>title</th>
+                <th>body</th>
+
+            </tr>
+        </thead>
+        <tbody id="details">
+        </tbody>
+
+
+    </table>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
